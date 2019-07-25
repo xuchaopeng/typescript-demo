@@ -8,6 +8,7 @@ var c1: CreatO = {
   age: 1,
   a: '2'
 };
+
 //接口约束函数
 interface CreatF {
   (name: string, age: number): number;
@@ -79,7 +80,7 @@ function xcp1(name: string | number) {
   return (name as string).length;
   // return (<string>name).length;
 }
-var x9 = xcp1(2);
+var x9 = xcp1('2');
 console.log(x9, '断言');
 //第三方库
 
